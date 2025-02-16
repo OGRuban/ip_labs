@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Card Form</title>
+</head>
+<body>
+    <header>
+        <h1>Orest form</h1>
+    </header>
+    <main>
+        <form action="#" method="post">
+            <section>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label>Full Name: <input type="text" name="full_name" required></label><br>
+                    <label>Email: <input type="email" name="email" required></label><br>
+                    <label>Password: <input type="password" name="password" required></label><br>
+                    <label>Age: <input type="number" name="age" min="1" required></label><br>
+                    <label>Date of Birth: <input type="date" name="dob" required></label>
+                </fieldset>
+            </section>
+            <section>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label>Gender:
+                        <input type="radio" name="gender" value="Male"> Male
+                        <input type="radio" name="gender" value="Female"> Female
+                    </label><br>
+                    <label>Languages Known:
+                        <input type="checkbox" name="languages" value="English"> English
+                        <input type="checkbox" name="languages" value="Ukrainian"> Ukrainian
+                        <input type="checkbox" name="languages" value="Polish"> Polish
+                    </label><br>
+                    <label>Country:
+                        <select name="country">
+                            <option value="usa">USA</option>
+                            <option value="japan">Japan</option>
+                            <option value="ukraine">Ukraine</option>
+                        </select>
+                    </label><br>
+                    <label>College Subjects:
+                        <select name="subjects" multiple>
+                            <option value="math">Mathematics</option>
+                            <option value="cs">Computer Science</option>
+                            <option value="physics">Physics</option>
+                            <option value="chemistry">Chemistry</option>
+                            <option value="english">English</option>
+                        </select>
+                    </label><br>
+                    <label>Rate Interest in CS: <input type="range" name="interest" min="1" max="10"></label><br>
+                    <label>Describe Skills:<br><textarea name="skills" rows="4"></textarea></label><br>
+                    <label>Upload Resume: <input type="file" name="resume" required></label><br>
+                    <label>Pick Favorite Color: <input type="color" name="color"></label><br>
+                    <label>Preferred Study Time: <input type="time" name="study_time"></label>
+                </fieldset>
+            </section>
+            <section>
+                <button type="submit">Submit Survey</button>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
