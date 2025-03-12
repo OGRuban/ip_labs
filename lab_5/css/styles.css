@@ -1,0 +1,33 @@
+#featured_container a:link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 3s ease-out;
+}
+
+#featured_container a:visited {
+    color: #fff;
+    text-decoration: none;
+    transition: color 3s ease-out;
+}
+
+#featured_container a:hover {
+    color: #fff;
+    text-decoration: none;
+    transition: color 3s ease-out;
+}
+
+#featured_container a:active {
+    color: #fff;
+    text-decoration: none;
+    transition: color 3s ease-out;
+}
+
+#featured_container a:link img,#featured_container a:visited img {
+    opacity: 0.85;
+    transition: opacity 1s ease-out;
+}
+
+#featured_container a:hover img,#featured_container a:active img {
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
