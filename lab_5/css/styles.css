@@ -1,33 +1,56 @@
-#featured_container a:link {
-    color: #fff;
-    text-decoration: none;
-    transition: color 3s ease-out;
+#featured_container {
+    background: #C2C2C2;
 }
-
-#featured_container a:visited {
-    color: #fff;
-    text-decoration: none;
-    transition: color 3s ease-out;
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
 }
-
-#featured_container a:hover {
-    color: #fff;
-    text-decoration: none;
-    transition: color 3s ease-out;
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
-
-#featured_container a:active {
-    color: #fff;
-    text-decoration: none;
-    transition: color 3s ease-out;
+header {
+    display: block;
+    unicode-bidi: isolate;
 }
-
-#featured_container a:link img,#featured_container a:visited img {
-    opacity: 0.85;
-    transition: opacity 1s ease-out;
+.fontyourface {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
 }
-
-#featured_container a:hover img,#featured_container a:active img {
-    opacity: 1;
-    transition: opacity 1s ease-out;
+body {
+    font-size: 1.6rem;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+#featured_container:before {
+    display: block;
+    width: 100%;
+    content: "";
+    height: 2px;
+    background-image: -webkit -gradient(linear, left bottom, right bottom, color-stop(0%, #979797), color-stop(50%, #C2C2C2), color-stop(100%, #979797));
+}
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
