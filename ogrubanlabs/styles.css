@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Morganite-ExtraBold';
+    src: url('Morganite-ExtraBold.woff2') format('woff2'),
+         url('Morganite-ExtraBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    font-family: 'Morganite-ExtraBold', sans-serif;
+    margin: 0;
+    background-color: #fff;
+}
+header {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    background: white;
+}
+h1 {
+    font-size: 5em;
+    margin: 0;
+}
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 2em;
+}
+li {
+    font-size: 1.5em;
+    margin: 25px 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    background: white;
+    font-size: 1.5em;
+}
+@media (max-width: 600px) {
+    li {
+        font-size: 1.2em;
+    }
+}
