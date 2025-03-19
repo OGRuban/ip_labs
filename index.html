@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Лабораторні роботи</title>
+    <title>LABS</title>
     <style>
         @font-face {
             font-family: 'Morganite-ExtraBold';
@@ -12,6 +12,7 @@
             font-weight: normal;
             font-style: normal;
         }
+        /* ====== ОСНОВНІ СТИЛІ ====== */
         body {
             display: flex;
             flex-direction: column;
@@ -21,27 +22,27 @@
             text-align: center;
             font-family: 'Morganite-ExtraBold', sans-serif;
             margin: 0;
-            background-color: #fff;
+            background-color: #000;
+            color: #fff;
         }
         header {
             width: 100%;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            top: 0;
-            background: white;
+            padding: 15px 0;
+            background: #000;
+            color: #fff;
         }
         h1 {
-            font-size: 5em;
+            font-size: 4em;
             margin: 0;
         }
         main {
             flex-grow: 1;
-            display: flex;
+            width: 100%;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 100%;
+            padding: 50px 0; /* Відступи зверху і знизу, щоб header/footer не перекривали */
         }
         ul {
             list-style-type: none;
@@ -54,7 +55,7 @@
         }
         a {
             text-decoration: none;
-            color: black;
+            color: #fff; 
             transition: font-size 0.3s ease;
         }
         a:hover {
@@ -63,15 +64,78 @@
         footer {
             width: 100%;
             text-align: center;
-            padding: 10px 0;
+            padding: 15px 0;
             position: fixed;
             bottom: 0;
-            background: white;
+            background: #000; 
+            color: #fff; 
             font-size: 1.5em;
+        } 
+        /* ====== АДАПТИВНІСТЬ ====== */
+        @media (max-width: 1024px) {
+            h1 {
+                font-size: 3.5em;
+            }
+            li {
+                font-size: 1.3em;
+            }
+            footer {
+                font-size: 1.2em;
+            }
         }
-        @media (max-width: 600px) {
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3em;
+            }
+            ul {
+                font-size: 1.5em;
+            }
             li {
                 font-size: 1.2em;
+                margin: 15px 0;
+            }
+            footer {
+                font-size: 1em;
+            }
+            main {
+                padding: 40px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            ul {
+                font-size: 1.3em;
+            }
+            li {
+                font-size: 1em;
+            }
+            footer {
+                font-size: 0.9em;
+            }
+            main {
+                padding: 30px 0;
+            }
+        }
+
+        @media (max-width: 320px) {
+            h1 {
+                font-size: 2em;
+            }
+            ul {
+                font-size: 1.2em;
+            }
+            li {
+                font-size: 0.9em;
+            }
+            footer {
+                font-size: 0.8em;
+            }
+            main {
+                padding: 25px 0;
             }
         }
     </style>
