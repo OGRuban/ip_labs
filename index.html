@@ -48,18 +48,27 @@
             list-style-type: none;
             padding: 0;
             font-size: 2em;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 20px; 
+            justify-content: center;
+            max-width: 600px; 
+            margin: auto; 
         }
         li {
             font-size: 1.5em;
             margin: 25px 0;
+            text-align: center;
         }
         a {
             text-decoration: none;
             color: #fff; 
-            transition: font-size 0.3s ease;
+            display: inline-block;
+            transition: transform 0.3s ease;
         }
+        
         a:hover {
-            font-size: 1.3em;
+            transform: scale(1.2);
         }
         footer {
             width: 100%;
@@ -90,6 +99,8 @@
             <li><a href="/lab_9/index.html">Lab9</a></li>
             <li><a href="/lab_10/index.html">Lab10</a></li>
             <li><a href="/lab_11/index.html">Lab11</a></li>
+            <li><a href="/lab_12/index.html">Lab12</a></li>
+            <li><a href="/lab_13/index.html">Lab13</a></li>
 
         </ul>
     </main>
